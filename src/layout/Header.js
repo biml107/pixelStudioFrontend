@@ -21,7 +21,7 @@ const Header = () => {
         />
 
         <Typography variant="h6">
-          Pixel Studio
+          Pixcel Studio
         </Typography>
 
       </Toolbar>
