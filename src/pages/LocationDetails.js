@@ -11,7 +11,7 @@ import {TitlebarBelowMasonryImageList } from "../components/ImageList";
 
 import { useAppContext } from "../context/AppContext";
 import VideoCard from "../components/VideoCard";
-// import ImageCard from "../components/ImageCard";
+//// import ImageCard from "../components/ImageCard";
 
 const LocationDetails = () => {
   const { id } = useParams();
