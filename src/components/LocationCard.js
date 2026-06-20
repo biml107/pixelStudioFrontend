@@ -13,13 +13,19 @@ const LocationCard = ({
     <Card
       onClick={() => onClick(location)}
       sx={{
-        cursor: "pointer"
+        cursor: "pointer",
+         height: "100%",
+      display: "flex",
+    flexDirection: "column",
       }}
     >
       <CardMedia
         component="img"
         image={location.image}
-        height="250"
+         sx={{
+    height: 400,
+    objectFit: "cover",
+  }}
       />
 
       <CardContent>

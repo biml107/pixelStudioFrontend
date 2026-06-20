@@ -4,19 +4,31 @@ import {
   Typography,
   Box
 } from "@mui/material";
-
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+const customTheme = createTheme({
+palette: {
+primary: {
+main: '#1f91f5',
+contrastText: '#FFFF',
+},
+},
+});
 const Header = () => {
   return (
-    <AppBar position="sticky">
+    <ThemeProvider theme={customTheme}>
+    <AppBar position="sticky" sx={{ mb: 3 }}>
       <Toolbar>
 
         <Box
           component="img"
-          src="/logo.png"
+          src="/Images/companylogo/companylogo3.jpeg"
           sx={{
             width: 50,
             height: 50,
-            mr: 2
+            mr: 2,
+            borderRadius: "50%",
+    objectFit: "cover",
+    border: "2px solid white",
           }}
         />
 
@@ -26,6 +38,7 @@ const Header = () => {
 
       </Toolbar>
     </AppBar>
+    </ThemeProvider>
   );
 };
 

@@ -23,6 +23,7 @@ const VideoCard = ({ video }) => {
           controls
           light={video.thumbnail} // optional
           playing={false}
+          onReady={() => console.log("Video is ready")}
         />
       </Box>
     </Card>

@@ -7,6 +7,7 @@ import {
 } from "@mui/material";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { useNavigate, useParams } from "react-router-dom";
+import {TitlebarBelowMasonryImageList } from "../components/ImageList";
 
 import { useAppContext } from "../context/AppContext";
 import VideoCard from "../components/VideoCard";
@@ -41,25 +42,25 @@ const LocationDetails = () => {
   }
 
   return (
-    <Box sx={{ p: { xs: 2, md: 3 } }}>
+    <Box sx={{ p: { xs: 2, md: 1 } ,backgroundColor:"#d6cdcd", minHeight:"100vh"}}>
       {/* Back Button */}
       <Button
         startIcon={<ArrowBackIcon />}
         variant="outlined"
-        sx={{ mb: 3 }}
+        sx={{ mb: 1 }}
         onClick={() => navigate("/")}
       >
         Back
       </Button>
 
-      {/* Location Title */}
+      {/* Location Title
       <Typography
         variant="h4"
         fontWeight={600}
         gutterBottom
       >
         {location.name}
-      </Typography>
+      </Typography> */}
 
       {/* Videos Section */}
       <Typography
@@ -70,7 +71,7 @@ const LocationDetails = () => {
           fontWeight: 600,
         }}
       >
-        Videos
+        {location.name}(Videos)
       </Typography>
 
       {location.videos?.length > 0 ? (
@@ -116,7 +117,7 @@ const LocationDetails = () => {
         Images
       </Typography>
 
-      {location.images?.length > 0 ? (
+      {/* {location.images?.length > 0 ? (
         <Box
           sx={{
             display: "flex",
@@ -145,7 +146,8 @@ const LocationDetails = () => {
         <Typography color="text.secondary">
           No images available.
         </Typography>
-      )}
+      )} */}
+      <TitlebarBelowMasonryImageList />
     </Box>
   );
 };
