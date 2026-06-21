@@ -16,7 +16,7 @@ contrastText: '#FFFF',
 const Header = () => {
   return (
     <ThemeProvider theme={customTheme}>
-    <AppBar position="sticky" sx={{ mb: 3 }}>
+    <AppBar position="sticky" sx={{ mb: 0 }}>
       <Toolbar>
 
         <Box

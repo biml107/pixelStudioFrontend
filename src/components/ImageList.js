@@ -6,7 +6,7 @@ import ImageListItemBar from '@mui/material/ImageListItemBar';
 
  function TitlebarBelowMasonryImageList() {
   return (
-    <Box sx={{ width: '100%', height: 600, overflowY: 'scroll' }}>
+    <Box sx={{ width: '95%', height: 600, overflowY: 'scroll' }}>
       <ImageList variant="masonry" cols={useMediaQuery('(min-width:600px)') ? 4 : 2} gap={8}>
         {itemData.map((item) => (
           <ImageListItem key={item.img}>
@@ -85,5 +85,27 @@ const itemData = [
     title: 'Coffee table',
     author: 'Hutomo Abrianto',
   },
+  {
+    img: '/Images/prewedding/image31.jpeg',
+    title: 'Coffee table',
+    author: 'Hutomo Abrianto',
+  },
+  {
+    img: '/Images/prewedding/image32.jpeg',
+    title: 'Coffee table',
+    author: 'Hutomo Abrianto',
+  },
+  {
+    img: '/Images/prewedding/image33.jpeg',
+    title: 'Coffee table',
+    author: 'Hutomo Abrianto',
+  },
+  
+
+  
+  
+
+  
+
 ];
 export {TitlebarBelowMasonryImageList};

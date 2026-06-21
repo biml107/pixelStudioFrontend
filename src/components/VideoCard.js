@@ -5,7 +5,7 @@ const VideoCard = ({ video }) => {
   return (
     <Card
       sx={{
-        minWidth: 350,
+        minWidth: 450,
         borderRadius: 2,
         overflow: "hidden",
       }}

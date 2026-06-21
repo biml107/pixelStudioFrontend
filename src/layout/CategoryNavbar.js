@@ -21,7 +21,7 @@ const CategoryNavbar = () => {
         p: 1,
         bgcolor: "#fff",
         position: "sticky",
-        top: 64,
+        top: 0,
         gap:1,
         zIndex: 1000
       }}

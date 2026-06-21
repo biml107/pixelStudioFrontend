@@ -42,7 +42,7 @@ const LocationDetails = () => {
   }
 
   return (
-    <Box sx={{ p: { xs: 2, md: 1 } ,backgroundColor:"#d6cdcd", minHeight:"100vh"}}>
+    <Box sx={{ p: { xs: 2, md: 0 } ,backgroundColor:"#d6cdcd", minHeight:"100vh"}}>
       {/* Back Button */}
       <Button
         startIcon={<ArrowBackIcon />}
@@ -66,7 +66,7 @@ const LocationDetails = () => {
       <Typography
         variant="h5"
         sx={{
-          mt: 4,
+          mt: 1,
           mb: 2,
           fontWeight: 600,
         }}

@@ -6,7 +6,7 @@ export const studioData = {
       locations: [
         {
           id: 1,
-          name: "Ranchi",
+          name: "Bokaro",
           image:
             "https://images.unsplash.com/photo-1511285560929-80b456fea0bc",
 
@@ -57,8 +57,38 @@ export const studioData = {
             {
               id: 1,
               image:
-                "https://www.instagram.com/p/DYwXRZmmZVf/?igsh=dzBlcWh6eWdyaXRi"
-            }
+                "Images/wedding/image1.jpeg"
+            },
+            {
+              id: 2,
+              image:
+                "Images/wedding/image2.jpeg"
+            },
+            {
+              id: 3,
+              image:
+                "Images/wedding/image3.jpeg"
+            },
+            {
+              id: 4,
+              image:
+                "Images/wedding/image4.jpeg"
+            },
+            {
+              id: 5,
+              image:
+                "Images/wedding/image5.jpeg"
+            },
+            {
+              id: 6,
+              image:
+                "Images/wedding/image6.jpeg"
+            },
+            {
+              id: 7,
+              image:
+                "Images/wedding/image7.jpeg"
+            },
           ]
         },
 
@@ -158,7 +188,48 @@ export const studioData = {
             "https://images.unsplash.com/photo-1520854221256-17451cc331bf",
 
           videos: [],
-          images: []
+          images: [
+            {
+              id: 1,
+              image:
+                "/Images/prewedding/image6.jpeg"
+            },
+            {
+              id: 2,
+              image:
+                "/Images/prewedding/image7.jpeg"
+            },
+            {
+              id: 3,
+              image:
+                "/Images/prewedding/image8.jpeg"
+            },
+            {
+              id: 4,
+              image:
+                "/Images/prewedding/image9.jpeg"
+            },
+            {
+              id: 5,
+              image:
+                "/Images/prewedding/image10.jpeg"
+            },
+            {
+              id: 6,
+              image:
+                "/Images/prewedding/image11.jpeg"
+            },
+            {
+              id: 7,
+              image:
+                "/Images/prewedding/image12.jpeg"
+            },
+            {
+              id: 8,
+              image:
+                "/Images/prewedding/image13.jpeg"
+            },
+          ]
         },
         {
           id: 3,
@@ -169,33 +240,7 @@ export const studioData = {
           videos: [],
           images: []
         },
-         {
-          id: 3,
-          name: "Hazaribagh",
-          image:
-            "https://images.unsplash.com/photo-1520854221256-17451cc331bf",
-
-          videos: [],
-          images: []
-        },
-         {
-          id: 3,
-          name: "Hazaribagh",
-          image:
-            "https://images.unsplash.com/photo-1520854221256-17451cc331bf",
-
-          videos: [],
-          images: []
-        },
-         {
-          id: 3,
-          name: "Hazaribagh",
-          image:
-            "https://images.unsplash.com/photo-1520854221256-17451cc331bf",
-
-          videos: [],
-          images: []
-        }
+      
       ]
     },
 
