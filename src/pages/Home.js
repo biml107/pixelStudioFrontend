@@ -10,11 +10,11 @@ const Home = () => {
  // const navigate = useNavigate();
 
   //const { selectedCategory } = useAppContext();
-const videos = [
-  "https://res.cloudinary.com/dm79pcqaj/video/upload/v1782069457/Ankit_Teaser_005_1_v2j5qc.mp4",
-  "https://res.cloudinary.com/dm79pcqaj/video/upload/v1782069497/Ankit_Teaser_005_2_yzedrk.mp4",
-  "https://res.cloudinary.com/dm79pcqaj/video/upload/v1782069536/Ankit_Teaser_005_3_vldktu.mp4"
-];
+// const videos = [
+//   "https://res.cloudinary.com/dm79pcqaj/video/upload/v1782069457/Ankit_Teaser_005_1_v2j5qc.mp4",
+//   "https://res.cloudinary.com/dm79pcqaj/video/upload/v1782069497/Ankit_Teaser_005_2_yzedrk.mp4",
+//   "https://res.cloudinary.com/dm79pcqaj/video/upload/v1782069536/Ankit_Teaser_005_3_vldktu.mp4"
+// ];
 
   return (
     <Box
