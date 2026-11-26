@@ -1,0 +1,707 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+.royal-wedding {
+  background: #e9e1d7;
+  padding: 50px 15px;
+  font-family: "DM Sans", sans-serif;
+  color: #654a3b;
+  scroll-behavior: smooth;
+}
+
+.royal-wedding * {
+  box-sizing: border-box;
+}
+
+/* COMMON PAGE DESIGN */
+
+.royal-page {
+  position: relative;
+  width: 100%;
+  max-width: 760px;
+  min-height: 1000px;
+  margin: 0 auto 45px;
+  padding: 75px 65px;
+  background: #fffdf7;
+  box-shadow: 0 15px 45px #00000020;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.royal-page::before {
+  content: "";
+  position: absolute;
+  inset: 18px;
+  border: 1px solid #d5b77c;
+  pointer-events: none;
+}
+
+.royal-page::after {
+  content: "";
+  position: absolute;
+  inset: 25px;
+  border: 1px solid #eadbc0;
+  pointer-events: none;
+}
+
+.royal-page-number {
+  position: absolute;
+  bottom: 35px;
+  right: 45px;
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  color: #b18a4b;
+}
+
+/* PAGE 1 - COVER */
+
+.royal-cover {
+  text-align: center;
+  background:
+    radial-gradient(circle at top left, #f6e7d4, transparent 45%),
+    #fffdf7;
+}
+
+.royal-border {
+  position: relative;
+  border: 1px solid #d5b77c;
+  padding: 65px 25px;
+}
+
+.royal-top-symbol {
+  font-size: 45px;
+  color: #b88c45;
+}
+
+.royal-small-heading {
+  margin-top: 25px;
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: #9b713d;
+}
+
+.royal-invitation {
+  margin-top: 45px;
+  font-family: "Playfair Display", serif;
+  font-size: 17px;
+  line-height: 1.9;
+  color: #806451;
+}
+
+.royal-floral {
+  margin: 35px 0;
+  font-size: 50px;
+  color: #bd995e;
+}
+
+.royal-couple-names {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(48px, 8vw, 76px);
+  font-weight: 400;
+  line-height: 1.15;
+  color: #7b3d32;
+}
+
+.royal-couple-names span {
+  display: block;
+  margin: 8px 0;
+  font-size: 35px;
+  font-style: italic;
+  color: #b48a49;
+}
+
+.royal-cover-description {
+  margin-top: 30px;
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  line-height: 1.8;
+  font-style: italic;
+}
+
+.royal-gold-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 35px 0;
+  color: #b88c45;
+}
+
+.royal-gold-line::before,
+.royal-gold-line::after {
+  content: "";
+  width: 90px;
+  height: 1px;
+  background: #c8a76a;
+}
+
+.royal-wedding-date {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: #8d6740;
+  font-size: 11px;
+  letter-spacing: 4px;
+}
+
+.royal-wedding-date strong {
+  font-family: "Playfair Display", serif;
+  font-size: 75px;
+  font-weight: 400;
+  color: #853f32;
+}
+
+.royal-cover-footer {
+  margin-top: 45px;
+  font-size: 9px;
+  letter-spacing: 3px;
+  color: #a38353;
+}
+
+.royal-bottom-flower {
+  margin-top: 35px;
+  font-size: 35px;
+  color: #b88c45;
+}
+
+/* COMMON SECTION HEADING */
+
+.royal-section-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.royal-section-heading > span {
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: #a17b46;
+}
+
+.royal-section-heading h2 {
+  margin: 15px 0;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(32px, 6vw, 45px);
+  font-weight: 400;
+  color: #793f32;
+}
+
+.royal-section-heading > div {
+  font-size: 28px;
+  color: #bc985a;
+}
+
+/* PAGE 2 - COUPLE */
+
+.royal-couple-page {
+  background:
+    radial-gradient(circle at bottom right, #f3e7d9, transparent 45%),
+    #fffdf7;
+}
+
+.royal-story-text {
+  max-width: 500px;
+  margin: 0 auto 45px;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 17px;
+  line-height: 1.9;
+  color: #806c5d;
+}
+
+.royal-couple-grid {
+  display: grid;
+  grid-template-columns: 1fr 55px 1fr;
+  align-items: center;
+  gap: 15px;
+}
+
+.royal-person {
+  text-align: center;
+}
+
+.royal-person-image {
+  width: 100%;
+  height: 310px;
+  border-radius: 160px 160px 5px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 20px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.royal-bride-image {
+  background-image:
+    linear-gradient(0deg, #39201790, transparent 60%),
+    url("https://images.unsplash.com/photo-1532712938310-34cb3982ef74?w=700");
+}
+
+.royal-groom-image {
+  background-image:
+    linear-gradient(0deg, #39201790, transparent 60%),
+    url("https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=700");
+}
+
+.royal-person-image span {
+  color: white;
+  font-size: 11px;
+  letter-spacing: 3px;
+}
+
+.royal-person h3 {
+  margin-top: 22px;
+  font-family: "Playfair Display", serif;
+  font-size: 29px;
+  font-weight: 400;
+  color: #813f32;
+}
+
+.royal-person > p {
+  font-size: 12px;
+  line-height: 1.8;
+  color: #806c5d;
+}
+
+.royal-person-caption {
+  display: block;
+  margin-top: 15px;
+  font-family: "Playfair Display", serif;
+  font-size: 13px;
+  font-style: italic;
+  color: #a37b47;
+  line-height: 1.7;
+}
+
+.royal-heart {
+  text-align: center;
+  font-size: 40px;
+  color: #b88c45;
+}
+
+.royal-couple-quote {
+  margin-top: 55px;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 21px;
+  font-style: italic;
+  color: #a37b47;
+}
+
+/* PAGE 3 - EVENTS */
+
+.royal-events-page {
+  background:
+    radial-gradient(circle at top right, #f6e8d9, transparent 40%),
+    #fffdf7;
+}
+
+.royal-events-intro {
+  max-width: 450px;
+  margin: -10px auto 40px;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #806c5d;
+}
+
+.royal-events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.royal-event-card {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 22px;
+  border: 1px solid #ead9bd;
+  background: #fffaf0;
+  transition: 0.3s;
+}
+
+.royal-event-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px #00000010;
+}
+
+.royal-event-icon {
+  min-width: 65px;
+  height: 65px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #f1e4ce;
+  font-size: 28px;
+}
+
+.royal-event-number {
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: #ad854d;
+}
+
+.royal-event-content h3 {
+  margin: 6px 0;
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #803e32;
+}
+
+.royal-event-date {
+  font-size: 11px;
+  color: #aa824c;
+}
+
+.royal-event-content p {
+  font-size: 12px;
+  line-height: 1.7;
+  color: #806c5d;
+}
+
+.royal-events-footer {
+  margin-top: 45px;
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #a17b46;
+}
+
+/* PAGE 4 - COUNTDOWN */
+
+.royal-countdown-page {
+  text-align: center;
+  background:
+    radial-gradient(circle at center, #f8ecdd, transparent 60%),
+    #fffdf7;
+}
+
+.royal-countdown-decoration {
+  margin: 25px 0;
+  font-size: 35px;
+  color: #bc985a;
+}
+
+.royal-countdown-text {
+  margin-bottom: 40px;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-style: italic;
+  color: #806c5d;
+}
+
+.royal-countdown {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.royal-time-box {
+  padding: 22px 8px;
+  border: 1px solid #d9bf91;
+  background: #fffaf0;
+}
+
+.royal-time-box strong {
+  display: block;
+  font-family: "Playfair Display", serif;
+  font-size: 38px;
+  font-weight: 400;
+  color: #823e32;
+}
+
+.royal-time-box span {
+  font-size: 9px;
+  letter-spacing: 1px;
+  color: #a17b46;
+}
+
+.royal-main-date {
+  margin-top: 60px;
+}
+
+.royal-main-date > span {
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: #a17b46;
+}
+
+.royal-main-date h3 {
+  margin: 15px 0;
+  font-family: "Playfair Display", serif;
+  font-size: 42px;
+  font-weight: 400;
+  color: #813f32;
+}
+
+.royal-main-date p {
+  font-size: 14px;
+  color: #806c5d;
+}
+
+.royal-quote-box {
+  max-width: 450px;
+  margin: 65px auto;
+  padding: 35px;
+  border-top: 1px solid #d9bf91;
+  border-bottom: 1px solid #d9bf91;
+}
+
+.royal-quote-box span {
+  font-family: "Playfair Display", serif;
+  font-size: 35px;
+  color: #bd985b;
+}
+
+.royal-quote-box p {
+  font-family: "Playfair Display", serif;
+  font-size: 19px;
+  line-height: 1.8;
+  font-style: italic;
+  color: #806c5d;
+}
+
+/* PAGE 5 - VENUE */
+
+.royal-venue-page {
+  text-align: center;
+  background:
+    radial-gradient(circle at bottom, #f4e6d4, transparent 50%),
+    #fffdf7;
+}
+
+.royal-venue-decoration {
+  margin: 25px 0;
+  font-size: 65px;
+}
+
+.royal-venue-label {
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: #a17b46;
+}
+
+.royal-venue-name {
+  margin: 20px 0;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(30px, 5vw, 42px);
+  font-weight: 400;
+  color: #803e32;
+}
+
+.royal-venue-address {
+  font-family: "Playfair Display", serif;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #806c5d;
+}
+
+.royal-venue-timing {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 35px 0;
+  padding: 25px 10px;
+  border-top: 1px solid #e5d3b4;
+  border-bottom: 1px solid #e5d3b4;
+}
+
+.royal-venue-timing div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.royal-venue-timing span {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #a17b46;
+}
+
+.royal-venue-timing strong {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.royal-location-button,
+.royal-rsvp-button {
+  display: inline-block;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 10px;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+.royal-location-button {
+  background: #853f32;
+  color: white;
+}
+
+.royal-location-button:hover {
+  background: #57251d;
+}
+
+.royal-rsvp {
+  margin-top: 65px;
+  padding: 35px 20px;
+  background: #f6eddf;
+}
+
+.royal-rsvp h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 27px;
+  font-weight: 400;
+  color: #803e32;
+}
+
+.royal-rsvp p {
+  max-width: 400px;
+  margin: 15px auto 25px;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #806c5d;
+}
+
+.royal-rsvp-button {
+  background: #247b53;
+  color: white;
+}
+
+.royal-rsvp-button:hover {
+  background: #165538;
+}
+
+.royal-final-message {
+  margin-top: 55px;
+}
+
+.royal-final-message > div {
+  font-size: 35px;
+  color: #bd985b;
+}
+
+.royal-final-message h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #803e32;
+}
+
+.royal-final-message p {
+  font-family: "Playfair Display", serif;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #806c5d;
+}
+
+.royal-final-message h3 {
+  margin-top: 20px;
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 400;
+  color: #a17b46;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+
+  .royal-wedding {
+    padding: 20px 8px;
+  }
+
+  .royal-page {
+    min-height: 850px;
+    padding: 55px 28px;
+    margin-bottom: 25px;
+  }
+
+  .royal-border {
+    padding: 55px 12px;
+  }
+
+  .royal-couple-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .royal-person-image {
+    max-width: 230px;
+    height: 260px;
+    margin: auto;
+  }
+
+  .royal-heart {
+    font-size: 30px;
+  }
+
+  .royal-event-card {
+    gap: 13px;
+    padding: 15px 10px;
+  }
+
+  .royal-event-icon {
+    min-width: 48px;
+    height: 48px;
+    font-size: 22px;
+  }
+
+  .royal-event-content h3 {
+    font-size: 19px;
+  }
+
+  .royal-event-content p {
+    font-size: 11px;
+  }
+
+  .royal-countdown {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .royal-time-box strong {
+    font-size: 32px;
+  }
+
+  .royal-venue-timing {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .royal-page-number {
+    bottom: 28px;
+    right: 30px;
+  }
+}
+
+/* SUBTLE PAGE ANIMATION */
+
+@media (prefers-reduced-motion: no-preference) {
+
+  .royal-page {
+    animation: royalPageAppear 0.8s ease both;
+  }
+
+  @keyframes royalPageAppear {
+    from {
+      opacity: 0;
+      transform: translateY(25px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+}

@@ -21,7 +21,7 @@ const wedding = {
   venue: 'The Royal Orchid Palace',
   address: 'Bokaro Steel City, Jharkhand, India',
   mapUrl: 'https://maps.google.com/?q=Bokaro+Steel+City',
-  phone: '919876543210', // WhatsApp number with country code, no + or spaces
+  phone: '919534404424', // WhatsApp number with country code, no + or spaces
   message: 'With the blessings of our families, we invite you to celebrate our wedding.'
 };
 

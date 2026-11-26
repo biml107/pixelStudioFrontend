@@ -8,6 +8,7 @@ import Layout from "../layout/Layout";
 import Home from "../pages/Home";
 import LocationDetails from "../pages/LocationDetails";
 import WeddingCard from "../pages/weddingcards/WeddingCard";
+import WeddingCard1 from "../pages/weddingcards/WeddingCard1";
 
 const AppRoutes = () => {
   return (
@@ -25,6 +26,10 @@ const AppRoutes = () => {
   <Route
     path="/weddingcard"
     element={<WeddingCard />}
+  />
+    <Route
+    path="/weddingcard1"
+    element={<WeddingCard1 />}
   />
 
     </Routes>
