@@ -7,6 +7,7 @@ import Layout from "../layout/Layout";
 
 import Home from "../pages/Home";
 import LocationDetails from "../pages/LocationDetails";
+import WeddingCard from "../pages/weddingcards/WeddingCard";
 
 const AppRoutes = () => {
   return (
@@ -20,6 +21,11 @@ const AppRoutes = () => {
           element={<LocationDetails />}
         />
       </Route>
+      {/* Independent wedding invitation */}
+  <Route
+    path="/weddingcard"
+    element={<WeddingCard />}
+  />
 
     </Routes>
   );
